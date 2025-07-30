@@ -3,6 +3,8 @@ import React from "react";
 import happyMemories from "@/assets/images/happy-memories.png";
 import CustomersFeedback from "@/components/customers-feedback";
 import WomenCustomer from "@/assets/images/women-customer.jpg";
+import MenCustomer from "@/assets/images/men-customer.jpg";
+import PrimaryBtn from "@/components/primary-btn";
 
 export default function Stories() {
   return (
@@ -14,11 +16,21 @@ export default function Stories() {
         >
           we make journeys unforgettable
         </h2>
-        <CustomersFeedback
-          img={WomenCustomer}
-          name="amara t."
-          description="Felt like i was hanging out with old friends - expect in a castle in Tuscany."
-        />
+        <div className="grid gap-8 mt-16">
+          <CustomersFeedback
+            img={WomenCustomer}
+            name="amara t."
+            description="Felt like i was hanging out with old friends - expect in a castle in Tuscany."
+          />
+          <CustomersFeedback
+            img={MenCustomer}
+            name="Jesse M."
+            description="We don't just tour tokyo, we lived it for a day."
+          />
+        </div>
+        <div className="mt-12">
+          <PrimaryBtn text="more stories" />
+        </div>
       </div>
       <div className="flex justify-end ">
         <div className="max-w-md h-[448px] relative">
