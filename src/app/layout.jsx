@@ -1,4 +1,4 @@
-import { Lora, Poppins } from "next/font/google";
+import { Lora, Poppins, Playfair } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/shared/navbar/Navbar";
 
