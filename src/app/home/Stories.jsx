@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import happyMemories from "@/assets/images/happy-memories.png";
+import CustomersFeedback from "@/components/customers-feedback";
+import WomenCustomer from "@/assets/images/women-customer.jpg";
 
 export default function Stories() {
   return (
@@ -12,6 +14,11 @@ export default function Stories() {
         >
           we make journeys unforgettable
         </h2>
+        <CustomersFeedback
+          img={WomenCustomer}
+          name="amara t."
+          description="Felt like i was hanging out with old friends - expect in a castle in Tuscany."
+        />
       </div>
       <div className="flex justify-end ">
         <div className="max-w-md h-[448px] relative">
