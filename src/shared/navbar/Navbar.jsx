@@ -1,10 +1,13 @@
+import { MenuIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import MobileNav from "./mobile-nav";
 
 export default function Navbar() {
   return (
-    <nav className="bg-base-200 py-4 shadow-md">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+    <nav className="bg-base-200 py-4 shadow-md px-5">
+      {/* tablet and desktop navbar */}
+      <div className="max-w-7xl mx-auto justify-between items-center hidden md:flex">
         <ul className="uppercase flex space-x-4 text-sm text-base-content/80 font-medium cursor-pointer ">
           <li className="hover:text-base-content transition-all delay-150">
             about
@@ -35,6 +38,8 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
+      {/* mobile navbar */}
+      <MobileNav />
     </nav>
   );
 }

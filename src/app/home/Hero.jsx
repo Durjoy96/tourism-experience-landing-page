@@ -10,10 +10,10 @@ export default function Hero() {
   return (
     <div className="relative">
       <SimpleParallax scale={1.25} delay={1} transition="cubic-bezier(0,0,0,1)">
-        <Image src={heroImg} className="w-full min-h-screen" />
+        <Image src={heroImg} className="w-full min-h-screen" alt="hero image" />
       </SimpleParallax>
       <div className="absolute top-4/6 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-12 text-center max-w-3xl  flex flex-col items-center">
-        <h1 className="uppercase font-lora text-7xl font-semibold text-white/90">
+        <h1 className="uppercase font-lora text-3xl md:text-7xl font-semibold text-white/90">
           Unforgettable Experiences Await
         </h1>
         <div className="flex items-center mt-12">
