@@ -5,9 +5,9 @@ import MobileNav from "./mobile-nav";
 
 export default function Navbar() {
   return (
-    <nav className="bg-base-200 py-4 shadow-md px-5">
+    <nav className="bg-base-200 py-4 shadow-md ">
       {/* tablet and desktop navbar */}
-      <div className="max-w-7xl mx-auto justify-between items-center hidden md:flex">
+      <div className="max-w-7xl mx-auto px-5 justify-between items-center hidden md:flex">
         <ul className="uppercase flex space-x-4 text-sm text-base-content/80 font-medium cursor-pointer ">
           <li className="hover:text-base-content transition-all delay-150">
             about
