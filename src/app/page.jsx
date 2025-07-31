@@ -1,4 +1,5 @@
 import Hero from "./home/Hero";
+import Journey from "./home/Journey";
 import Stories from "./home/Stories";
 
 export default function Home() {
@@ -7,8 +8,11 @@ export default function Home() {
       <section>
         <Hero />
       </section>
-      <section className="py-32 bg-base-200">
+      <section className="pt-32 pb-20 bg-base-200">
         <Stories />
+      </section>
+      <section className="py-32 bg-base-200">
+        <Journey />
       </section>
     </>
   );
