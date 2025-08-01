@@ -13,7 +13,7 @@ export default function Journey() {
     >
       <div className="max-w-7xl mx-auto px-5 py-32">
         <h2
-          className="font-lora uppercase text-5xl font-fold text-white/90 max-w-xl"
+          className="font-lora uppercase text-5xl font-semibold text-white/90 max-w-xl"
           style={{ wordSpacing: "-5px" }}
         >
           Your Journey begins before you arrived
