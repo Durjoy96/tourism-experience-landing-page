@@ -1,11 +1,11 @@
 import PrimaryBtn from "@/components/primary-btn";
-import Image from "next/image";
 import React from "react";
 import sanctuaryImg from "@/assets/images/sanctuary.jpg";
-import lostVoyageImg from "@/assets/images/lost-voyage.jpg";
+import KalalauImg from "@/assets/images/kalalau.png";
 import mountainsInSwitzerlandImg from "@/assets/images/mountains-in-switzerland.jpg";
 import lakeElizabethImg from "@/assets/images/lake-elizabeth.jpg";
 import southAfricaImg from "@/assets/images/south-africa.jpg";
+import MostBookedPlaceCard from "@/components/most-booked-place-card";
 
 export default function MostBookedPlaces() {
   return (
@@ -21,20 +21,55 @@ export default function MostBookedPlaces() {
           <PrimaryBtn text="browse all experience" />
         </div>
       </div>
-      <div className="mt-32">
-        <Image src={sanctuaryImg} />
+      <div className="mt-29">
+        <MostBookedPlaceCard
+          src={sanctuaryImg}
+          size="original"
+          placeName="Sanctuary Beneath The Falls"
+          rating={4.9}
+          reviews={321}
+          price={45}
+        />
+      </div>
+      <div className="pt-30">
+        <MostBookedPlaceCard
+          src={KalalauImg}
+          size="short"
+          placeName="Kalalau Trail"
+          rating={4.6}
+          reviews={204}
+          price={40}
+        />
+      </div>
+      <div className="pt-4">
+        <MostBookedPlaceCard
+          src={mountainsInSwitzerlandImg}
+          size="short"
+          placeName="Mountains In Switzerland"
+          rating={4.8}
+          reviews={402}
+          price={105}
+        />
       </div>
       <div>
-        <Image src={lostVoyageImg} />
+        <MostBookedPlaceCard
+          src={lakeElizabethImg}
+          size="short"
+          placeName="Lake Elizabeth"
+          rating={4.5}
+          reviews={207}
+          price={70}
+        />
       </div>
-      <div>
-        <Image src={mountainsInSwitzerlandImg} />
-      </div>
-      <div>
-        <Image src={lakeElizabethImg} />
-      </div>
-      <div>
-        <Image src={southAfricaImg} />
+      <div className="mt-4">
+        <MostBookedPlaceCard
+          src={southAfricaImg}
+          size="short"
+          placeName="Mountains in South Africa"
+          rating={4.7}
+          reviews={195}
+          price={80}
+        />
       </div>
     </div>
   );

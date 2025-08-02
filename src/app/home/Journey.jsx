@@ -19,7 +19,6 @@ export default function Journey() {
           Your Journey begins before you arrived
         </h2>
       </div>
-      <VideoModal />
       <button
         onClick={() => setOpen(true)}
         className="w-16 h-16 bg-base-300/50 rounded-full flex justify-center items-center backdrop-blur-2xl border border-base-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover:scale-[1.2] transition-all duration-300 delay-150 group/button hover:opacity-80"
