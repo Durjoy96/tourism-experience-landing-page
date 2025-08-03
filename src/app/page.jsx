@@ -1,4 +1,5 @@
 import Hero from "./home/Hero";
+import JoinCommunity from "./home/JoinCommunity";
 import Journey from "./home/Journey";
 import MostBookedPlaces from "./home/MostBookedPlaces";
 import Stories from "./home/Stories";
@@ -17,6 +18,9 @@ export default function Home() {
       </section>
       <section className="py-12 bg-base-200">
         <MostBookedPlaces />
+      </section>
+      <section className="py-12 bg-base-200">
+        <JoinCommunity />
       </section>
     </>
   );
