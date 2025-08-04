@@ -8,7 +8,7 @@ export default function PrimaryBtn({ text, onClick }) {
       <button
         onClick={onClick}
         type="button"
-        className="bg-primary text-primary-content font-medium text-base uppercase pl-10 pr-24 py-3 rounded-sm flex items-center justify-center gap-2 hover:bg-primary/90 transition-colors delay-150 duration-300 cursor-pointer group"
+        className="bg-primary text-primary-content font-medium text-sm uppercase pl-10 pr-24 py-3 rounded-sm flex items-center justify-center gap-2 hover:bg-primary/90 transition-colors delay-150 duration-300 cursor-pointer group text-nowrap"
         style={{
           clipPath: "polygon(0% 0%, 75% 0%, 82% 50%, 75% 100%, 0% 100%)",
         }}
