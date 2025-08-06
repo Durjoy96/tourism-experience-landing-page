@@ -1,6 +1,7 @@
-import { Lora, Poppins, Playfair } from "next/font/google";
+import { Lora, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/shared/navbar/Navbar";
+import Footer from "@/shared/footer/footer";
 
 const lora = Lora({
   variable: "--font-lora",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
           <Navbar />
         </header>
         <main className="font-poppins">{children}</main>
+        <Footer />
       </body>
     </html>
   );
