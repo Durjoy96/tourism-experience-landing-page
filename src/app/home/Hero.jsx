@@ -11,7 +11,11 @@ export default function Hero() {
     <div className="relative">
       {/* parallax background image */}
       <SimpleParallax scale={1.25} delay={1} transition="cubic-bezier(0,0,0,1)">
-        <Image src={heroImg} className="w-full min-h-screen" alt="hero image" />
+        <Image
+          src={heroImg}
+          className="w-full min-h-screen object-cover object-center"
+          alt="hero image"
+        />
       </SimpleParallax>
       {/* contents */}
       <div className="absolute top-4/6 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-12 text-center max-w-3xl flex flex-col items-center">
