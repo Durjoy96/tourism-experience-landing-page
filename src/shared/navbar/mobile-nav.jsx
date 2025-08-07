@@ -7,7 +7,7 @@ import React, { useState } from "react";
 export default function MobileNav() {
   const [displayMenus, setDisplayMenus] = useState(false);
   return (
-    <div className="flex justify-between md:flex lg:hidden">
+    <div className="w-full flex justify-between px-5 md:flex lg:hidden">
       <Link href="/">
         <h2 className="uppercase text-2xl text-base-content font-bold font-lora cursor-pointer">
           EchoWay

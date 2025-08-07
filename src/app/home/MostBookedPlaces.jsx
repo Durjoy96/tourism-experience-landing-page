@@ -9,7 +9,7 @@ import MostBookedPlaceCard from "@/components/most-booked-place-card";
 
 export default function MostBookedPlaces() {
   return (
-    <div className="max-w-7xl mx-auto px-5 columns-3">
+    <div className="max-w-7xl mx-auto px-5 columns-1 lg:columns-3">
       <div>
         <h2
           className="font-lora uppercase text-5xl font-semibold text-base-content max-w-md"

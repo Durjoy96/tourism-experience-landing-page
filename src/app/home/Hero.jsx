@@ -14,7 +14,7 @@ export default function Hero() {
         <Image src={heroImg} className="w-full min-h-screen" alt="hero image" />
       </SimpleParallax>
       {/* contents */}
-      <div className="absolute top-4/6 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-12 text-center max-w-3xl  flex flex-col items-center">
+      <div className="absolute top-4/6 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-12 text-center max-w-3xl flex flex-col items-center">
         {/* tagline */}
         <h1 className="uppercase font-lora text-3xl md:text-7xl font-semibold text-white/90">
           Unforgettable Experiences Await

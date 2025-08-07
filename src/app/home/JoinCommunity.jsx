@@ -26,7 +26,7 @@ export default function JoinCommunity() {
           {/* form */}
           <div
             id="formContainer"
-            className={`bg-primary-content pt-6 pb-4 px-3 w-[520px] absolute left-1/2 -translate-x-1/2 flex items-center flex-col`}
+            className={`bg-primary-content pt-6 pb-4 px-3 md:w-[520px] absolute left-1/2 -translate-x-1/2 flex items-center flex-col`}
             style={{
               bottom: `-${
                 formHeight && formHeight / 2 //half of the formContainer height to position it on the middle of the main container

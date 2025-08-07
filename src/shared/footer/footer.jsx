@@ -56,7 +56,7 @@ export default function Footer() {
           </p>
         </div>
         {/* all pages */}
-        <div className="grid grid-cols-6 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-6 mt-16">
           {pagesList.map((obj, idx) => (
             <div key={idx}>
               <h3 className="uppercase text-primary-content text-base font-semibold">
