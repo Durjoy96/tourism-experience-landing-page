@@ -20,9 +20,9 @@ export default function MobileNav() {
           }
         >
           {displayMenus ? (
-            <X className="transition-opacity duration-300" />
+            <X className="transition-opacity duration-300 stroke-base-content" />
           ) : (
-            <MenuIcon className="transition-opacity duration-300" />
+            <MenuIcon className="transition-opacity duration-300 stroke-base-content" />
           )}
         </button>
         {/* animated dropdown menu */}
