@@ -8,12 +8,12 @@ export default function Journey() {
   const [open, setOpen] = useState(false);
   return (
     <div
-      className="w-full relative min-h-[950px] bg-cover bg-center hover:bg-black/40 hover:bg-blend-darken transition-all duration-300 delay-150 group"
+      className="w-full relative min-h-[300px] md:min-h-[450px] lg:min-h-[950px] bg-cover bg-center hover:bg-black/40 hover:bg-blend-darken transition-all duration-300 delay-150 group"
       style={{ backgroundImage: `url(${JourneyImage.src})` }}
     >
-      <div className="max-w-7xl mx-auto px-5 py-32">
+      <div className="max-w-7xl mx-auto px-5 py-6 md:py-10 lg:py-32">
         <h2
-          className="font-lora uppercase text-5xl font-semibold text-white/90 max-w-xl"
+          className="font-lora uppercase text-xl md:text-3xl lg:text-5xl font-semibold text-white/90 max-w-xl"
           style={{ wordSpacing: "-5px" }}
         >
           Your Journey begins before you arrived
