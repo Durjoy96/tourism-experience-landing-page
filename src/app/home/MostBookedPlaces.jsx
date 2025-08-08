@@ -12,7 +12,7 @@ export default function MostBookedPlaces() {
     <div className="max-w-7xl mx-auto px-5 columns-1 md:columns-2 lg:columns-3">
       <div>
         <h2
-          className="font-lora uppercase text-xl md:text-3xl lg:text-5xl font-semibold text-base-content max-w-md"
+          className="font-lora uppercase text-2xl md:text-3xl lg:text-5xl font-semibold text-base-content max-w-md"
           style={{ wordSpacing: "-5px" }}
         >
           Most Booked this season

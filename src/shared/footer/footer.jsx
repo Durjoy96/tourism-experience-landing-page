@@ -51,7 +51,7 @@ export default function Footer() {
           <h2 className="uppercase font-lora text-2xl md:text-3xl lg:text-4xl font-bold text-primary-content">
             Echoway
           </h2>
-          <p className="text-sm uppercase text-base-content-secondary mt-2">
+          <p className="text-sm uppercase text-base-content-secondary mt-2 text-center">
             step into the story of your next adventure
           </p>
         </div>

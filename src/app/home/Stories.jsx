@@ -11,7 +11,7 @@ export default function Stories() {
     <div className="max-w-7xl mx-auto px-5 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-0">
       <div>
         <h2
-          className="font-lora uppercase text-xl md:text-3xl text-base-content font-semibold max-w-xs"
+          className="font-lora uppercase text-2xl md:text-3xl text-base-content font-semibold max-w-xs"
           style={{ wordSpacing: "-5px" }}
         >
           we make journeys unforgettable
@@ -32,16 +32,18 @@ export default function Stories() {
           <PrimaryBtn text="more stories" />
         </div>
       </div>
-      <div className="flex md:justify-center lg:justify-end">
-        <div className="max-w-md h-[448px] relative">
+      <div className="flex justify-end md:justify-center lg:justify-end">
+        <div className="max-w-[300px] md:max-w-md h-[350px] md:h-[448px] relative">
           <Image
             src={happyMemories}
             className="w-full h-full object-cover object-center"
             alt="Happy Memories"
           />
-          <div className="w-[200px] h-[200px] bg-primary-content absolute -bottom-[80px] -left-[20px] px-6 py-8 flex flex-col justify-between">
-            <span className="text-white font-semibold text-5xl">500k</span>
-            <span className="text-white font-normal text-sm uppercase">
+          <div className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-primary-content absolute -bottom-[80px] -left-[20px] px-4 md:px-6 py-6 md:py-8 flex flex-col justify-between">
+            <span className="text-white font-semibold text-2xl md:text-5xl">
+              500k
+            </span>
+            <span className="text-white font-normal text-xs md:text-sm uppercase">
               more than 500,000 memories made
             </span>
           </div>

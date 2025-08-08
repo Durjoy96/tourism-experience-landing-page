@@ -9,7 +9,7 @@ export default function MobileNav() {
   return (
     <div className="w-full flex justify-between px-5 md:flex lg:hidden">
       <Link href="/">
-        <h2 className="uppercase text-2xl text-base-content font-bold font-lora cursor-pointer">
+        <h2 className="uppercase text-xl text-base-content font-bold font-lora cursor-pointer">
           EchoWay
         </h2>
       </Link>

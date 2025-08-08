@@ -37,7 +37,7 @@ export default function JoinCommunity() {
               Join our community
             </span>
             <h4
-              className="font-lora uppercase text-3xl font-semibold text-white/90 max-w-md text-center mt-4"
+              className="font-lora uppercase text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 max-w-md text-center mt-4"
               style={{ wordSpacing: "-5px" }}
             >
               Ready to make memories that last a life Time
