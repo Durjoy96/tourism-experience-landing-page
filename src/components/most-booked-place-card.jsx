@@ -19,9 +19,9 @@ export default function MostBookedPlaceCard({
     >
       <Image src={src} className="w-full h-full object-cover object-center" />
       {/* overlay */}
-      <div className="absolute top-0 bottom-0 left-0 right-0 bg-black opacity-0 group-hover:opacity-30 transition-all duration-500 ease-in-out delay-150"></div>
+      <div className="absolute top-0 bottom-0 left-0 right-0 bg-black opacity-0 group-hover:opacity-30 group-active:opacity-30 transition-all duration-500 ease-in-out delay-150"></div>
       {/* details card */}
-      <div className="bg-base-200/90 p-4 absolute bottom-2 left-2 right-2 rounded-xs opacity-0 translate-y-10 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out delay-150">
+      <div className="bg-base-200/90 p-4 absolute bottom-2 left-2 right-2 rounded-xs opacity-0 translate-y-10 group-hover:opacity-100 group-active:opacity-100 group-hover:translate-y-0 group-active:translate-y-0 transition-all duration-500 ease-in-out delay-150">
         {/* place name */}
         <span className="text-lg text-base-content font-semibold">
           {placeName}
