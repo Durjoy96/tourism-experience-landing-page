@@ -8,15 +8,15 @@ import PrimaryBtn from "@/components/primary-btn";
 
 export default function Stories() {
   return (
-    <div className="max-w-7xl mx-auto px-5 grid grid-cols-2">
+    <div className="max-w-7xl mx-auto px-5 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-0">
       <div>
         <h2
-          className="font-lora uppercase text-3xl text-base-content font-semibold max-w-xs"
+          className="font-lora uppercase text-xl md:text-3xl text-base-content font-semibold max-w-xs"
           style={{ wordSpacing: "-5px" }}
         >
           we make journeys unforgettable
         </h2>
-        <div className="grid gap-8 mt-16">
+        <div className="grid gap-6 md:gap-8 mt-8 md:mt-16">
           <CustomersFeedback
             img={WomenCustomer}
             name="amara t."
@@ -28,11 +28,11 @@ export default function Stories() {
             description="We don't just tour tokyo, we lived it for a day."
           />
         </div>
-        <div className="mt-12">
+        <div className="mt-8 md:mt-12">
           <PrimaryBtn text="more stories" />
         </div>
       </div>
-      <div className="flex justify-end ">
+      <div className="flex md:justify-center lg:justify-end">
         <div className="max-w-md h-[448px] relative">
           <Image
             src={happyMemories}
