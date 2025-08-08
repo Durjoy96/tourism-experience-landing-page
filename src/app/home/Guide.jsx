@@ -9,13 +9,13 @@ export default function Guide() {
     <div className="max-w-7xl mx-auto px-5">
       <div className="flex justify-center">
         <h2
-          className="font-lora uppercase text-5xl font-semibold text-base-content max-w-md text-center"
+          className="font-lora uppercase text-xl md:text-3xl lg:text-5xl font-semibold text-base-content max-w-md text-center"
           style={{ wordSpacing: "-5px" }}
         >
           Led by locals who love it.
         </h2>
       </div>
-      <div className="grid grid-cols-3 gap-4 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4 mt-8 lg:mt-10">
         <GuideCard
           src={FirstGuide}
           name="antonio"
