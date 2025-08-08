@@ -14,11 +14,11 @@ export default function JoinCommunity() {
   return (
     <div style={{ paddingBottom: `${formHeight && formHeight / 2}px` }}>
       <div
-        className="w-full h-[800px] bg-fixed bg-center"
+        className="w-full h-[600px] md:h-[800px] bg-fixed bg-center"
         style={{ backgroundImage: `url(${ManAndWaterfallImg.src})` }}
       >
-        <div className="max-w-7xl mx-auto px-5 py-12 relative h-full">
-          <h3 className="text-white/90 max-w-lg text-2xl font-medium">
+        <div className="max-w-7xl mx-auto px-5 py-8 md:py-12 relative h-full">
+          <h3 className="text-white/90 max-w-lg text-xl md:text-2xl font-medium">
             Sign up to receive exclusive access to unforgettable local
             experiences, travel inspiration, and insider tips - delivered
             straight to your inbox.
