@@ -48,7 +48,7 @@ export default function Footer() {
     <footer className="py-12 bg-base-200">
       <div className="max-w-7xl mx-auto px-5">
         <div className="flex flex-col items-center">
-          <h2 className="uppercase font-lora text-4xl font-bold text-primary-content">
+          <h2 className="uppercase font-lora text-2xl md:text-3xl lg:text-4xl font-bold text-primary-content">
             Echoway
           </h2>
           <p className="text-sm uppercase text-base-content-secondary mt-2">
@@ -56,13 +56,13 @@ export default function Footer() {
           </p>
         </div>
         {/* all pages */}
-        <div className="grid grid-cols-1 md:grid-cols-6 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-0 mt-8 md:mt-10 lg:mt-16">
           {pagesList.map((obj, idx) => (
             <div key={idx}>
               <h3 className="uppercase text-primary-content text-base font-semibold">
                 {obj.title}
               </h3>
-              <ul className="space-y-4 mt-8">
+              <ul className="space-y-2 md:space-y-4 mt-3 md:mt-6 lg:mt-8">
                 {obj.pages.map((pageName, idx) => (
                   <li
                     key={idx}
@@ -76,7 +76,7 @@ export default function Footer() {
           ))}
         </div>
         {/* copyright and socials */}
-        <div className="pt-16 flex items-center justify-between">
+        <div className="pt-16 flex flex-col-reverse md:flex-row items-center justify-between gap-6 md:gap-0">
           <span className="text-sm text-base-content-secondary">
             &copy; 2025 Echoway. All right reserved. | Terms of service
           </span>
