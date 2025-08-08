@@ -9,19 +9,19 @@ import MostBookedPlaceCard from "@/components/most-booked-place-card";
 
 export default function MostBookedPlaces() {
   return (
-    <div className="max-w-7xl mx-auto px-5 columns-1 lg:columns-3">
+    <div className="max-w-7xl mx-auto px-5 columns-1 md:columns-2 lg:columns-3">
       <div>
         <h2
-          className="font-lora uppercase text-5xl font-semibold text-base-content max-w-md"
+          className="font-lora uppercase text-xl md:text-3xl lg:text-5xl font-semibold text-base-content max-w-md"
           style={{ wordSpacing: "-5px" }}
         >
           Most Booked this season
         </h2>
-        <div className="mt-6">
+        <div className="mt-4 md:mt-6">
           <PrimaryBtn text="browse all experience" />
         </div>
       </div>
-      <div className="mt-29">
+      <div className="mt-8 lg:mt-29">
         <MostBookedPlaceCard
           src={sanctuaryImg}
           size="original"
@@ -31,7 +31,7 @@ export default function MostBookedPlaces() {
           price={45}
         />
       </div>
-      <div className="pt-30">
+      <div className="mt-5 md:mt-4 lg:pt-30">
         <MostBookedPlaceCard
           src={KalalauImg}
           size="short"
@@ -41,7 +41,7 @@ export default function MostBookedPlaces() {
           price={40}
         />
       </div>
-      <div className="pt-4">
+      <div className="pt-5 md:pt-4 lg:pt-4">
         <MostBookedPlaceCard
           src={mountainsInSwitzerlandImg}
           size="short"
@@ -51,7 +51,7 @@ export default function MostBookedPlaces() {
           price={105}
         />
       </div>
-      <div>
+      <div className="pt-5 md:pt-4 lg:pt-0">
         <MostBookedPlaceCard
           src={lakeElizabethImg}
           size="short"
@@ -61,7 +61,7 @@ export default function MostBookedPlaces() {
           price={70}
         />
       </div>
-      <div className="mt-4">
+      <div className="mt-5 md:mt-4 lg:mt-4">
         <MostBookedPlaceCard
           src={southAfricaImg}
           size="short"
