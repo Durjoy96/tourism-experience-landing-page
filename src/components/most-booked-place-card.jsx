@@ -1,7 +1,10 @@
+"use client";
+
 import { Dot, Star } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import LinkBtn from "./link-btn";
+import { motion } from "motion/react";
 
 export default function MostBookedPlaceCard({
   src,
@@ -12,7 +15,11 @@ export default function MostBookedPlaceCard({
   price,
 }) {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
       className={`w-full relative group cursor-pointer ${
         size === "short" && "h-[350px]"
       } ${size === "original" && "h-auto"}`}
@@ -48,6 +55,6 @@ export default function MostBookedPlaceCard({
           <LinkBtn text="Book Now" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
