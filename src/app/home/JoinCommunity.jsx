@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import ManAndWaterfallImg from "@/assets/images/a-man-with-a-waterfall.png";
 import PrimaryBtn from "@/components/primary-btn";
+import { motion } from "motion/react";
 
 export default function JoinCommunity() {
   const [formHeight, setFormHeight] = useState(null);
@@ -24,7 +25,11 @@ export default function JoinCommunity() {
             straight to your inbox.
           </h3>
           {/* form */}
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
             id="formContainer"
             className={`bg-primary-content pt-6 pb-4 px-3 md:w-[520px] absolute left-1/2 -translate-x-1/2 flex items-center flex-col`}
             style={{
@@ -104,7 +109,7 @@ export default function JoinCommunity() {
                 </span>
               </span>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
