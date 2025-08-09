@@ -3,6 +3,7 @@ import React from "react";
 import FirstGuide from "@/assets/images/antonio.jpg";
 import SecondGuide from "@/assets/images/yukiko.jpg";
 import ThirdGuide from "@/assets/images/daniel.jpg";
+import { motion } from "motion/react";
 
 export default function Guide() {
   return (
@@ -20,16 +21,19 @@ export default function Guide() {
           src={FirstGuide}
           name="antonio"
           description="Let's explore the hidden history of this ancient city together."
+          animationDelay={0}
         />
         <GuideCard
           src={SecondGuide}
           name="yukio"
           description="I love sharing my favorite local dishes with new people."
+          animationDelay={0.3}
         />
         <GuideCard
           src={ThirdGuide}
           name="daniel"
           description="Wine is so much more than just a drink! It's a story in a bottle."
+          animationDelay={0.6}
         />
       </div>
     </div>

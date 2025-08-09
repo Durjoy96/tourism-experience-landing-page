@@ -1,10 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import LinkBtn from "./link-btn";
+import { motion } from "motion/react";
 
-export default function GuideCard({ src, name, description }) {
+export default function GuideCard({ src, name, description, animationDelay }) {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: animationDelay }}
+      viewport={{ once: true }}
+    >
       <div className="w-full">
         <Image
           src={src}
@@ -23,6 +31,6 @@ export default function GuideCard({ src, name, description }) {
           <LinkBtn text="view all experience" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
