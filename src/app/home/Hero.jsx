@@ -6,6 +6,7 @@ import PrimaryBtn from "@/components/primary-btn";
 import LinkBtn from "@/components/link-btn";
 import SimpleParallax from "simple-parallax-js/";
 import Image from "next/image";
+
 export default function Hero() {
   return (
     <div className="relative">
