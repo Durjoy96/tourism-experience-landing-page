@@ -4,7 +4,7 @@ import React from "react";
 import heroImg from "@/assets/images/hero-img.png";
 import PrimaryBtn from "@/components/primary-btn";
 import LinkBtn from "@/components/link-btn";
-import SimpleParallax from "simple-parallax-js/";
+import SimpleParallax from "simple-parallax-js";
 import Image from "next/image";
 
 export default function Hero() {

@@ -3,7 +3,6 @@ import React from "react";
 import FirstGuide from "@/assets/images/antonio.jpg";
 import SecondGuide from "@/assets/images/yukiko.jpg";
 import ThirdGuide from "@/assets/images/daniel.jpg";
-import { motion } from "motion/react";
 
 export default function Guide() {
   return (
